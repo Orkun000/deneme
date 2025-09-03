@@ -1,10 +1,27 @@
+// Create a Main class
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("İlk");
-        System.out.println("orkun ...");
 
-        Customer customer1 = new Customer("ali", "yılmaz", "123");
-        CustomerDTO customerDto1 = new CustomerDTO(customer1.name, customer1.surname);
-        System.out.println("Hoş Geldin " + " " +customerDto1.name+" "+ customerDto1.surname);
+    // Create a fullThrottle() method
+    public void fullThrottle() {
+        System.out.println("The car is going as fast as it can!");
+    }
+
+    // Create a speed() method and add a parameter
+    public void speed(int maxSpeed) {
+        System.out.println("Max speed is: " + maxSpeed);
+    }
+
+    public void SonHali(int maxSpeed) {
+        System.out.println("Son hali");
+    }
+
+    // Inside main, call the methods on the myCar object
+    public static void main(String[] args) {
+        Main myCar = new Main();   // Create a myCar object
+        myCar.fullThrottle();     // Call the fullThrottle() method
+        myCar.speed(200);          // Call the speed() method
     }
 }
+
+// The car is going as fast as it can!
+// Max speed is: 200
