@@ -11,9 +11,6 @@ public class Main {
         System.out.println("Max speed is: " + maxSpeed);
     }
 
-    public void SonHali(int maxSpeed) {
-        System.out.println("Son hali");
-    }
 
     // Inside main, call the methods on the myCar object
     public static void main(String[] args) {
